@@ -1,0 +1,33 @@
+# Node.js / React
+**/node_modules/
+**/build/
+**/dist/
+**/.next/
+**/.cache/
+
+# Python
+**/__pycache__/
+**/*.py[cod]
+**/*.egg-info/
+**/venv/
+**/env/
+
+# Environment
+.env
+.env.*
+
+# VSCode / IDEs
+.vscode/
+.idea/
+*.swp
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# SQLite or temp databases (if used)
+*.sqlite3
+*.db

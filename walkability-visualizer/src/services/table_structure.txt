@@ -1,0 +1,190 @@
+                                                  Table "public.epa_sld_database_v3"
+        Column         |             Type              | Collation | Nullable |                        Default                        
+-----------------------+-------------------------------+-----------+----------+-------------------------------------------------------
+ objectid              | integer                       |           | not null | nextval('epa_sld_database_v3_objectid_seq'::regclass)
+ geoid10               | character varying(12)         |           |          | 
+ geoid20               | character varying(50)         |           |          | 
+ statefp               | character varying(2)          |           |          | 
+ countyfp              | character varying(3)          |           |          | 
+ tractce               | character varying(6)          |           |          | 
+ blkgrpce              | character varying(1)          |           |          | 
+ csa                   | character varying(3)          |           |          | 
+ csa_name              | character varying(100)        |           |          | 
+ cbsa                  | character varying(5)          |           |          | 
+ cbsa_name             | character varying(100)        |           |          | 
+ cbsa_pop              | double precision              |           |          | 
+ cbsa_emp              | double precision              |           |          | 
+ cbsa_wrk              | double precision              |           |          | 
+ ac_total              | double precision              |           |          | 
+ ac_water              | double precision              |           |          | 
+ ac_land               | double precision              |           |          | 
+ ac_unpr               | double precision              |           |          | 
+ totpop                | integer                       |           |          | 
+ counthu               | integer                       |           |          | 
+ hh                    | integer                       |           |          | 
+ p_wrkage              | double precision              |           |          | 
+ autoown0              | integer                       |           |          | 
+ pct_ao0               | double precision              |           |          | 
+ autoown1              | integer                       |           |          | 
+ pct_ao1               | double precision              |           |          | 
+ autoown2p             | integer                       |           |          | 
+ pct_ao2p              | double precision              |           |          | 
+ workers               | integer                       |           |          | 
+ r_lowwagewk           | integer                       |           |          | 
+ r_medwagewk           | integer                       |           |          | 
+ r_hiwagewk            | integer                       |           |          | 
+ r_pctlowwage          | double precision              |           |          | 
+ totemp                | integer                       |           |          | 
+ e5_ret                | integer                       |           |          | 
+ e5_off                | integer                       |           |          | 
+ e5_ind                | integer                       |           |          | 
+ e5_svc                | integer                       |           |          | 
+ e5_ent                | integer                       |           |          | 
+ e8_ret                | integer                       |           |          | 
+ e8_off                | integer                       |           |          | 
+ e8_ind                | integer                       |           |          | 
+ e8_svc                | integer                       |           |          | 
+ e8_ent                | integer                       |           |          | 
+ e8_ed                 | integer                       |           |          | 
+ e8_hlth               | integer                       |           |          | 
+ e8_pub                | integer                       |           |          | 
+ e_lowwagewk           | integer                       |           |          | 
+ e_medwagewk           | integer                       |           |          | 
+ e_hiwagewk            | integer                       |           |          | 
+ e_pctlowwage          | double precision              |           |          | 
+ d1a                   | double precision              |           |          | 
+ d1b                   | double precision              |           |          | 
+ d1c                   | double precision              |           |          | 
+ d1c5_ret              | double precision              |           |          | 
+ d1c5_off              | double precision              |           |          | 
+ d1c5_ind              | double precision              |           |          | 
+ d1c5_svc              | double precision              |           |          | 
+ d1c5_ent              | double precision              |           |          | 
+ d1c8_ret              | double precision              |           |          | 
+ d1c8_off              | double precision              |           |          | 
+ d1c8_ind              | double precision              |           |          | 
+ d1c8_svc              | double precision              |           |          | 
+ d1c8_ent              | double precision              |           |          | 
+ d1c8_ed               | double precision              |           |          | 
+ d1c8_hlth             | double precision              |           |          | 
+ d1c8_pub              | double precision              |           |          | 
+ d1d                   | double precision              |           |          | 
+ d1_flag               | double precision              |           |          | 
+ d2a_jphh              | double precision              |           |          | 
+ d2b_e5mix             | double precision              |           |          | 
+ d2b_e5mixa            | double precision              |           |          | 
+ d2b_e8mix             | double precision              |           |          | 
+ d2b_e8mixa            | double precision              |           |          | 
+ d2a_ephhm             | double precision              |           |          | 
+ d2c_trpmx1            | double precision              |           |          | 
+ d2c_trpmx2            | double precision              |           |          | 
+ d2c_tripeq            | double precision              |           |          | 
+ d2r_jobpop            | double precision              |           |          | 
+ d2r_wrkemp            | double precision              |           |          | 
+ d2a_wrkemp            | double precision              |           |          | 
+ d2c_wremlx            | double precision              |           |          | 
+ d3a                   | double precision              |           |          | 
+ d3aao                 | double precision              |           |          | 
+ d3amm                 | double precision              |           |          | 
+ d3apo                 | double precision              |           |          | 
+ d3b                   | double precision              |           |          | 
+ d3bao                 | double precision              |           |          | 
+ d3bmm3                | double precision              |           |          | 
+ d3bmm4                | double precision              |           |          | 
+ d3bpo3                | double precision              |           |          | 
+ d3bpo4                | double precision              |           |          | 
+ d4a                   | double precision              |           |          | 
+ d4b025                | double precision              |           |          | 
+ d4b050                | double precision              |           |          | 
+ d4c                   | double precision              |           |          | 
+ d4d                   | double precision              |           |          | 
+ d4e                   | double precision              |           |          | 
+ d5ar                  | double precision              |           |          | 
+ d5ae                  | double precision              |           |          | 
+ d5br                  | double precision              |           |          | 
+ d5be                  | double precision              |           |          | 
+ d5cr                  | double precision              |           |          | 
+ d5cri                 | double precision              |           |          | 
+ d5ce                  | double precision              |           |          | 
+ d5cei                 | double precision              |           |          | 
+ d5dr                  | double precision              |           |          | 
+ d5dri                 | double precision              |           |          | 
+ d5de                  | double precision              |           |          | 
+ d5dei                 | double precision              |           |          | 
+ d2a_ranked            | double precision              |           |          | 
+ d2b_ranked            | double precision              |           |          | 
+ d3b_ranked            | double precision              |           |          | 
+ d4a_ranked            | double precision              |           |          | 
+ natwalkind            | double precision              |           |          | 
+ region                | character varying(8000)       |           |          | 
+ households            | integer                       |           |          | 
+ workers_1             | integer                       |           |          | 
+ residents             | integer                       |           |          | 
+ drivers               | double precision              |           |          | 
+ vehicles              | integer                       |           |          | 
+ white                 | integer                       |           |          | 
+ male                  | integer                       |           |          | 
+ lowwage               | integer                       |           |          | 
+ medwage               | integer                       |           |          | 
+ highwage              | integer                       |           |          | 
+ w_p_lowwage           | double precision              |           |          | 
+ w_p_medwage           | double precision              |           |          | 
+ w_p_highwage          | double precision              |           |          | 
+ gasprice              | integer                       |           |          | 
+ logd1a                | double precision              |           |          | 
+ logd1c                | double precision              |           |          | 
+ logd3aao              | double precision              |           |          | 
+ logd3apo              | double precision              |           |          | 
+ d4bo25                | integer                       |           |          | 
+ d5dei_1               | integer                       |           |          | 
+ logd4d                | integer                       |           |          | 
+ uptpercap             | integer                       |           |          | 
+ b_c_constant          | double precision              |           |          | 
+ b_c_male              | double precision              |           |          | 
+ b_c_ld1c              | double precision              |           |          | 
+ b_c_drvmveh           | double precision              |           |          | 
+ b_c_ld1a              | double precision              |           |          | 
+ b_c_ld3apo            | double precision              |           |          | 
+ b_c_inc1              | double precision              |           |          | 
+ b_c_gasp              | double precision              |           |          | 
+ b_n_constant          | double precision              |           |          | 
+ b_n_inc2              | double precision              |           |          | 
+ b_n_inc3              | double precision              |           |          | 
+ b_n_white             | double precision              |           |          | 
+ b_n_male              | double precision              |           |          | 
+ b_n_drvmveh           | double precision              |           |          | 
+ b_n_gasp              | double precision              |           |          | 
+ b_n_ld1a              | double precision              |           |          | 
+ b_n_ld1c              | double precision              |           |          | 
+ b_n_ld3aao            | double precision              |           |          | 
+ b_n_ld3apo            | double precision              |           |          | 
+ b_n_d4bo25            | double precision              |           |          | 
+ b_n_d5dei             | double precision              |           |          | 
+ b_n_uptpc             | double precision              |           |          | 
+ c_r_households        | integer                       |           |          | 
+ c_r_pop               | integer                       |           |          | 
+ c_r_workers           | integer                       |           |          | 
+ c_r_drivers           | double precision              |           |          | 
+ c_r_vehicles          | integer                       |           |          | 
+ c_r_white             | double precision              |           |          | 
+ c_r_male              | double precision              |           |          | 
+ c_r_lowwage           | double precision              |           |          | 
+ c_r_medwage           | double precision              |           |          | 
+ c_r_highwage          | double precision              |           |          | 
+ c_r_drmv              | double precision              |           |          | 
+ noncom_vmt_per_worker | double precision              |           |          | 
+ com_vmt_per_worker    | double precision              |           |          | 
+ vmt_per_worker        | double precision              |           |          | 
+ vmt_tot_min           | double precision              |           |          | 
+ vmt_tot_max           | double precision              |           |          | 
+ vmt_tot_avg           | double precision              |           |          | 
+ ghg_per_worker        | double precision              |           |          | 
+ annual_ghg            | double precision              |           |          | 
+ slc_score             | double precision              |           |          | 
+ shape_length          | double precision              |           |          | 
+ shape_area            | double precision              |           |          | 
+ shape                 | geometry(MultiPolygon,102039) |           |          | 
+Indexes:
+    "epa_sld_database_v3_pkey" PRIMARY KEY, btree (objectid)
+    "epa_sld_database_v3_shape_geom_idx" gist (shape)
+
