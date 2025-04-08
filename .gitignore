@@ -1,22 +1,26 @@
 # Node.js / React
+node_modules/
 **/node_modules/
-**/build/
-**/dist/
-**/.next/
-**/.cache/
+build/
+dist/
+.next/
+.cache/
 
 # Python
+__pycache__/
 **/__pycache__/
-**/*.py[cod]
-**/*.egg-info/
-*/venv/
+*.py[cod]
+*.egg-info/
+venv/
+**/venv/
+env/
 **/env/
 
-# Environment
+# Environment files
 .env
 .env.*
 
-# VSCode / IDEs
+# IDEs & editors
 .vscode/
 .idea/
 *.swp
@@ -28,7 +32,9 @@ Thumbs.db
 # Logs
 *.log
 
-# SQLite or temp databases (if used)
+# SQLite / temporary DBs
 *.sqlite3
 *.db
+
+# GIS
 SmartLocationDatabase.gdb/
