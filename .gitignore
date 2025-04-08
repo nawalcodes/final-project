@@ -31,3 +31,4 @@ Thumbs.db
 # SQLite or temp databases (if used)
 *.sqlite3
 *.db
+SmartLocationDatabase.gdb/
